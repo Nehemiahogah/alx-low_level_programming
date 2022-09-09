@@ -1,6 +1,7 @@
 #include <unistd.h>
 /**
 *main - Prints the text
+*Description - Program that prints
 *Return - Always 1 (success)
 */
 int main(void)
