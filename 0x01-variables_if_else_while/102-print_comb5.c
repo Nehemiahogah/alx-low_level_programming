@@ -1,28 +1,34 @@
-12.
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
-* main - Entry Point
-* Return: Always 0
+* main - Entry point
+* Return: Always 0 (success)
 */
 int main(void)
 {
-int p, q;
-for (p = 0; p <= 98; p++)
+int n1 = 0, n2;
+while (n1 <= 99)
 {
-for (q = p + 1; q <= 99; q++)
+n2 = n1;
+while (n2 <= 99)
 {
-putchar((p / 10) + '0');
-putchar((p % 10) + '0');
+if (n2 != n1)
+{
+putchar((n1 / 10) + 48);
+putchar((n1 % 10) + 48);
 putchar(' ');
-putchar((q / 10) + '0');
-putchar((q % 10) + '0');
-if (p != 98 || q != 99)
+putchar((n2 / 10) + 48);
+putchar((n2 % 10) + 48);
+if (n1 != 98 || n2 != 98)
 {
 putchar(',');
 putchar(' ');
 }
 }
+++n2;
+}
+++n1;
 }
 putchar('\n');
 return (0);
