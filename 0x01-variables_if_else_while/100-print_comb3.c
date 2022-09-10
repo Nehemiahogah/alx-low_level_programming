@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
 * main - print single digit number starting from zero
 * Return: returns zero at the end
