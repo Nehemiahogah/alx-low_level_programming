@@ -16,7 +16,7 @@ while (n2 <= 9)
 if (n1 != n2 && n1 < n2)
 {
 putchar(n1 + 48);
-putchat(n2 + 48);
+putchar(n2 + 48);
 if(n1 + n2 != 17)
 {
 putchar(',');
@@ -27,6 +27,6 @@ putchar(' ');
 }
 ++n1;
 }
-putchar('\n')
-return 0;
+putchar('\n');
+return (0);
 }
