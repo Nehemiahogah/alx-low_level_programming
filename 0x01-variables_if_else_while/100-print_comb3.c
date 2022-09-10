@@ -16,7 +16,7 @@ if (j > 1)
 {
 putchar(i + '0');
 putchar(j + '0');
-if (I != 8)
+if (i != 8)
 {
 putchar(',');
 putchar(' ');
