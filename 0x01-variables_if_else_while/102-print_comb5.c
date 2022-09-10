@@ -5,29 +5,26 @@
 * main - Entry point
 * Return: Always 0 (success)
 */
-int main(void)
-{
-int n1 = 0, n2;
-while (n1 <= 98)
-{
-n2 = n1 + 1;
-while (n2 <= 99)
-{
-putchar((n1 / 10) + '0');
-putchar((n1 % 10) + '0');
-putchar(' ');
-putchar((n2 / 10) + '0');
-putchar((n2 % 10) + '0');
-if (n1 == 98 || n2 == 98)
-{
-putchar(',');
-putchar(' ');
+int main(void) 
+{ 
+int a, b; 
+for (a = 0; a <= 98; a++) 
+{ 
+for (b = a + 1; b <= 99; b++) 
+{ 
+putchar((a / 10) + '0'); 
+putchar((a % 10) + '0'); 
+putchar(' '); 
+putchar((b / 10) + '0'); 
+putchar((b % 10) + '0'); 
+if (a == 98 && b == 99) 
+continue; 
+putchar(','); 
+putchar(' '); 
+} 
+} 
+{ 
+putchar('\n'); 
 }
-}
-++n2;
-}
-++n1;
-}
-putchar('\n');
-return (0);
+return (0);
 }
