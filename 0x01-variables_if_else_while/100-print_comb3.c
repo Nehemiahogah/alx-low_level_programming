@@ -7,17 +7,25 @@
 */
 int main(void)
 {
-int d;
-for (d = 0; d < 100; d++)
+int n1 = 0, n2;
+while (n1 <= 9)
 {
-putchar((d / 10) + '0');
-putchar((d % 10) + '0');
-if (d != 99)
+n2 = 0;
+while (n2 <= 9)
+if (n1 != n2 && n1 < n2)
+{
+putchar(n1 + 48)
+putchat(n2 + 48)
+if(n1 + n2 != 17)
 {
 putchar(',');
 putchar(' ');
 }
 }
-putchar('\n');
-return (0);
+++n2;
+}
+++n1;
+}
+putchar('\n')
+return 0;
 }
