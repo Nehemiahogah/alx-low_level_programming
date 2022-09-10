@@ -2,20 +2,26 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - Entry point
-* Return: Always 0 (success)
+* main - print single digit number starting from zero
+* Return: returns zero at the end
 */
 int main(void)
 {
-int d;
-for (d = 0; d < 100; d++)
+int i,j;
+for (I = 0; i <= 9; i++)
 {
-putchar((d / 10) + '0');
-putchar((d % 10) + '0');
-if (d != 99)
+for (j = 1; j <= 9; j++)
+{
+if (j > 1)
+{
+putchar(i + '0');
+putchar(j + '0');
+if (I != 8)
 {
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 putchar('\n');
