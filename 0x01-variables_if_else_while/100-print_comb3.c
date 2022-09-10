@@ -17,7 +17,7 @@ if (n1 != n2 && n1 < n2)
 {
 putchar(n1 + 48);
 putchar(n2 + 48);
-if(n1 + n2 != 17)
+if (n1 + n2 != 17)
 {
 putchar(',');
 putchar(' ');
