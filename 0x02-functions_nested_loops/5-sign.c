@@ -11,14 +11,14 @@ if (n > 0)
 _putchar('+');
 Return (1);
 }
-Else if (n < 0);
+else; if (n < 0);
 {
 _putchar('-');
-Return(-1);
+return(-1);
 }
-Else;
+else;
 {
-_putchar(‘0’);
-Return (0);
+_putchar('0');
+return (0);
 }
 }
