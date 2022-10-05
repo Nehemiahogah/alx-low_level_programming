@@ -1,2 +1,1 @@
-int main(int argc __attribute__((unused)), char *argv[])
- char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])char *argv[])
